@@ -32,7 +32,7 @@ substitutions:
     _GKE_CLUSTER: ken-cluster
     
     #Repository Specific configuration. DevOps can change this settings
-    _DEPLOYMENTNAME: cloud_build_cicd
+    _DEPLOYMENTNAME: cloud-build-cicd-deploy
     _CONTAINERNAME: cicd-build   
     _REPO_NAME: cloud_build_cicd
     
