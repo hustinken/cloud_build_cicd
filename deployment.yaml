@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-build-cicd-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: cloud-build-cicd
+  template:
+    metadata:
+      labels:
+        name: cloud-build-cicd
+    spec:
+      containers:
+      - name: cloud-build-cicd-container
+        image: nginx:1.14.2
+        command:
+        - sh
+        - "-c"
+        - echo Hello Kubernetes! && sleep 3600
