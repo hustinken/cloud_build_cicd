@@ -18,4 +18,4 @@ spec:
         command:
         - sh
         - "-c"
-        - echo Hello Kubernetes! && sleep 3600
+        - echo Hello Kubernetess! && sleep 3600
